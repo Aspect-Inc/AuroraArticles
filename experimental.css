@@ -1,0 +1,290 @@
+html {
+  font-size: 19px;
+}
+
+.title-gradient {
+	background: linear-gradient(99deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 200% 100%;
+	animation: gradient 15s ease ;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+body {
+  --main-color: white;
+  --light: #ffffff;
+  --light-no-override: #ffffff;
+  --section: #e1e7e9;
+  font-family: Inter, Montserrat, Roboto, Comfortaa, Arial, sans-serif,
+    Helvetica, serif;
+  font-size: 1rem;
+  background-color: #232b2b;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --main-color: #001845;
+    --light: #000000;
+    --section: #283336;
+  }
+}
+
+
+.nav-link {
+  background-color: inherit;
+  transition: background-color 400ms;
+  padding: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fefefe;
+  font-family: Inter, Montserrat, Roboto, Comfortaa, Arial, sans-serif,
+    Helvetica, serif;
+  top: 50%;
+}
+.nav-link:hover {
+  background-color: grey;
+  padding: 15px;
+}
+
+.navbar-responsive-theme {
+  color: black;
+}
+
+section {
+  background-color: #fefefe;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+div.navbar-nav {
+  list-style-type: none;
+  margin: -8px;
+  padding: 15px;
+  overflow: hidden;
+  background-color: lightgray;
+  margin-top: -1%;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 96px;
+  font-weight: 900;
+  text-align: center;
+  min-width: auto;
+  padding: 15px 25px;
+  margin: auto;
+  color: linear-gradient(to right, #001eff, #8000ff);
+}
+
+.button-35 {
+  align-items: center;
+  background-color: #060000;
+  border-radius: 10px;
+  box-shadow: rgba(18, 18, 18, 0.1);
+  box-sizing: border-box;
+  color: #fefefe;
+  cursor: pointer;
+  font-family: Inter, Montserrat, Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 1;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: auto;
+  padding: 15px 25px;
+  margin: auto;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* mobile controls start */
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  .title {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 800;
+    min-width: auto;
+    padding: 15px 25px;
+    margin: auto;
+    color: linear-gradient(to right, #001eff, #8000ff);
+  }
+
+  div.navbar-nav {
+    margin: -15px;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #000000;
+    margin-top: -2%;
+  }
+
+  .sub-title {
+    font-family: Inter, Montserrat, Roboto, Comfortaa, Arial, sans-serif,
+      Helvetica, serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5px;
+    color: white;
+  }
+  
+  .button {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+  }
+  
+  .color-header {
+font-size: 36px;
+font-weight: 6000;
+text-align: center;
+min-width: auto;
+padding: 20px 70px;
+margin: auto;
+}
+  
+  .book {
+  width: 200px;
+  height: 100px;
+/*ai, i had to go to my sisters birthday party, but im back. anyways, i'm going to be
+    doing some more experimenting, this time with the text in index.html and with the
+    background colors in the css
+    */
+    /* you had some trouble there. what's up?
+    Oh cool! Are we ready to do some developing? Wait why don't you try on an experimental page?*/
+}
+}
+
+
+@media screen and (max-width: 1025px) and (orientation: portrait) {
+  .title {
+    font-size: 54px;
+    text-align: center;
+    font-weight: 800;
+    min-width: auto;
+    padding: 10px 15px;
+    margin: auto;
+    color: linear-gradient(to right, #001eff, #8000ff);
+  }
+
+  div.navbar-nav {
+    margin: -15px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    margin-top: -2%;
+  }
+
+  .sub-title {
+    font-family: Inter, Montserrat, Roboto, Comfortaa, Arial, sans-serif,
+      Helvetica, serif;
+    text-align: center;
+    font-size: 12px;
+    padding: 2.5px;
+    color: white;
+  }
+
+  .button {
+    text-align: center;
+    padding: 25px;
+    margin: 15px;
+    font-size: 32px;
+  }
+  
+  .color-header {
+font-size: 40px;
+font-weight: 7000;
+text-align: center;
+min-width: auto;
+padding: 25px 75px;
+margin: auto;
+}
+  
+  .book {
+  width: auto;
+  height: 100px;
+}
+}
+
+/* mobile controls end */
+
+
+.button {
+  text-align: center;
+}
+
+.sub-title {
+  font-family: Inter, Montserrat, Roboto, Comfortaa, Arial, sans-serif,
+    Helvetica, serif;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}
+
+.book {
+      display: grid;
+      place-items: left;
+width: 400px;
+  height: 200px;
+}
+
+.classroom-header {
+font-size: 48px;
+font-weight: 1000;
+text-align: right;
+min-width: auto;
+padding: 30px 75px;
+margin: 25px;
+margin-left: 85px;
+
+}
+
+.all-paragraph-article-picture {
+font-size: 18px;
+font-weight: 500;
+text-align: right;
+height: 50%;
+min-width: auto;
+padding: 30px 75px;
+margin: -75px;
+margin-left: 85px;
+}
